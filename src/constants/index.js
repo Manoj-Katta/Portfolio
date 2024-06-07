@@ -76,5 +76,5 @@ export const ADDITIONAL_DETAILS = {
 export const CONTACT = {
   address: "Andhra Pradesh, India",
   phoneNo: "+91 8309507120",
-  email: "2021ucs0099@iitjammu.ac.in",
+  email: "manojkatta1173@gmail.com",
 };
