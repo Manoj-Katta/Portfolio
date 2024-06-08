@@ -2,9 +2,9 @@ import project1 from "../assets/projects/Ascend.png";
 import project2 from "../assets/projects/chatTime.png";
 
 
-export const HERO_CONTENT = `I am a passionate Computer Science student at IIT Jammu with a strong foundation in full stack development and a keen interest in artificial intelligence and machine learning. With hands-on experience in developing and managing web applications, I strive to leverage my skills to solve real-world problems and create impactful solutions.`;
+export const HERO_CONTENT = `A passionate Computer Science student at IIT Jammu with a strong foundation in full stack development and a keen interest in artificial intelligence and machine learning. With hands-on experience in developing and managing web applications, I strive to leverage my skills to solve real-world problems and create impactful solutions.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer currently pursuing a B.Tech in Computer Science at IIT Jammu. With a CGPA of 8.29 and a strong academic background, I have honed my skills in various technologies including HTML, CSS, JavaScript, React, Node.js, Express.js and MongoDB. My curiosity for technology drives me to continuously learn and adapt, tackling new challenges with enthusiasm. Outside of academics, I enjoy staying active with sports like volleyball and badminton, and I am actively involved in various extracurricular activities and competitions.`;
+export const ABOUT_TEXT = `A dedicated and versatile full stack developer currently pursuing a B.Tech in Computer Science at IIT Jammu. With a CGPA of 8.29 and a strong academic background, I have honed my skills in various technologies including HTML, CSS, JavaScript, React, Node.js, Express.js and MongoDB. My curiosity for technology drives me to continuously learn and adapt, tackling new challenges with enthusiasm. Outside of academics, I enjoy staying active with sports like volleyball and badminton, and I am actively involved in various extracurricular activities and competitions.`;
 
 export const EXPERIENCES = [
   {
