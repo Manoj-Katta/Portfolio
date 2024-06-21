@@ -9,7 +9,7 @@ const Navbar = () => {
         <img className="mx-2 w-16" src={logo} alt="logo"></img>
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <a href="https://drive.google.com/file/d/1g9dZ3i2M_OXtRdvcowDMCiGWVesV67rj/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <a href="https://drive.google.com/file/d/1gKs0g3nM-TWfnDQxXK0YT2u02VGw7_Ck/view?usp=sharing" target="_blank" rel="noopener noreferrer">
           <FaFile />
         </a>
         <a href="https://www.linkedin.com/in/manoj-katta-209a00228/" target="_blank" rel="noopener noreferrer">
