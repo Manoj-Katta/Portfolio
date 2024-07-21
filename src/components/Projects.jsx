@@ -1,8 +1,13 @@
 import React from "react";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 
 const Projects = () => {
+  const handleRedirect = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h2
@@ -24,8 +29,8 @@ const Projects = () => {
             >
               <img
                 src={project.image}
-                width={150}
-                height={150}
+                width={220}
+                height={220}
                 alt={project.title}
                 className="mb-6 rounded"
               ></img>
@@ -41,11 +46,35 @@ const Projects = () => {
               {project.technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900"
+                  className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800"
                 >
                   {tech}
                 </span>
               ))}
+              <div className="text-purple-600 m-2 flex-col">
+                {project.github && (
+                  <h6 className="flex">
+                    Github Repo:
+                    <div
+                      className="p-1"
+                      onClick={() => handleRedirect(project.github)}
+                    >
+                      <FaGithub />
+                    </div>
+                  </h6>
+                )}
+                {project.website && (
+                  <h6 className="flex">
+                    Website:
+                    <div
+                      className="p-1"
+                      onClick={() => handleRedirect(project.website)}
+                    >
+                      <FaGlobe />
+                    </div>
+                  </h6>
+                )}
+              </div>
             </motion.div>
           </div>
         ))}
