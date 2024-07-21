@@ -1,7 +1,7 @@
 import { DiRedis } from "react-icons/di";
 import { FaNode } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";
-import { SiExpress, SiMongodb } from "react-icons/si";
+import { SiExpress, SiMongodb, SiRedux } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { motion } from "framer-motion";
 
@@ -75,7 +75,16 @@ const Technologies = () => {
         >
           <SiMongodb className="text-7xl text-green-500" />
         </motion.div>
+        <motion.div
+          variants={iconVariants(3)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiRedux className="text-7xl text-violet-500 " />
+        </motion.div>
       </motion.div>
+     
     </div>
   );
 };
