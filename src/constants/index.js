@@ -1,6 +1,7 @@
 import project1 from "../assets/projects/Ascend.png";
 import project2 from "../assets/projects/chatTime.png";
 import C2PA_Tool from "../assets/projects/C2PA_Tool.png"
+import food_restaurant from '../assets/projects/Food-Restaurant.png'
 
 export const HERO_CONTENT = `A passionate Computer Science student at IIT Jammu with a strong foundation in full stack development and a keen interest in artificial intelligence and machine learning. With hands-on experience in developing and managing web applications, I strive to leverage my skills to solve real-world problems and create impactful solutions.`;
 
@@ -61,6 +62,14 @@ export const PROJECTS = [
     technologies: ["React", "Node.js", "Express.js", "C2PA" ],
     github: "https://github.com/Manoj-Katta/My_C2PA_Tool"
   },
+    {
+      title: "Food-Restaurant-Frontend",
+      image:food_restaurant,
+      description: "Developed a visually stunning and fully responsive food ordering website frontend using React.js, ensuring a seamless user experience across all devices.",
+      technologies: ["React"],
+      github:"https://github.com/Manoj-Katta/restaurant",
+      website:"https://food-restaurant-frontend.netlify.app/"
+    }
 ];
 
 export const SKILLS = {
