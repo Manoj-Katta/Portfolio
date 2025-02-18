@@ -8,7 +8,7 @@ export const ABOUT_TEXT = `A dedicated and versatile full stack developer curren
 
 export const EXPERIENCES = [
   {
-    year: "May 2024 - Present",
+    year: "May 2024 - Aug 2024",
     role: "Research Intern",
     company: "City, University of London",
     description: `Conducted research and analysis on Coalition for Content Provenance and Authenticity (C2PA) implementations for deepfake detection.
