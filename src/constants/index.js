@@ -2,6 +2,7 @@ import project1 from "../assets/projects/Ascend.png";
 import project2 from "../assets/projects/chatTime.png";
 import C2PA_Tool from "../assets/projects/C2PA_Tool.png"
 import food_restaurant from '../assets/projects/Food-Restaurant.png'
+import Email_Track from '../assets/projects/Email_Track.png'
 
 export const HERO_CONTENT = `A passionate Computer Science student at IIT Jammu with a strong foundation in full stack development and a keen interest in artificial intelligence and machine learning. With hands-on experience in developing and managing web applications, I strive to leverage my skills to solve real-world problems and create impactful solutions.`;
 
@@ -69,7 +70,22 @@ export const PROJECTS = [
       technologies: ["React"],
       github:"https://github.com/Manoj-Katta/restaurant",
       website:"https://food-restaurant-frontend.netlify.app/"
-    }
+    },
+    {
+      title: "Email Tracker",
+      image: Email_Track, 
+      description:
+        "Built an email tracking system to monitor email opens and interactions. Implemented a tracking pixel to capture email open events and stored metadata in MongoDB. Developed a dashboard to visualize email interactions, enhancing user insights. Resolved Gmail blacklisting issues by switching to Thunderbird for manual email sending.",
+      technologies: [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "HTML",
+        "Vercel"
+      ],
+      github: "https://github.com/Manoj-Katta/email-tracker"
+  }
+  
 ];
 
 export const SKILLS = {
