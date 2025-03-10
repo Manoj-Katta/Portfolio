@@ -83,7 +83,8 @@ export const PROJECTS = [
         "HTML",
         "Vercel"
       ],
-      github: "https://github.com/Manoj-Katta/email-tracker"
+      github: "https://github.com/Manoj-Katta/email-tracker",
+      website: "https://email-tracker-frontend.vercel.app/"
   }
   
 ];
