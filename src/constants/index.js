@@ -145,3 +145,4 @@ export const CONTACT = {
   phoneNo: "+91 8309507120",
   email: "manojkatta1173@gmail.com",
 };
+
