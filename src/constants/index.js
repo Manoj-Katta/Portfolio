@@ -65,15 +65,6 @@ export const PROJECTS = [
     github: "https://github.com/Manoj-Katta/My_C2PA_Tool",
   },
   {
-    title: "Food-Restaurant-Frontend",
-    image: food_restaurant,
-    description:
-      "Developed a visually stunning and fully responsive food ordering website frontend using React.js, ensuring a seamless user experience across all devices.",
-    technologies: ["React"],
-    github: "https://github.com/Manoj-Katta/restaurant",
-    website: "https://food-restaurant-frontend.netlify.app/",
-  },
-  {
     title: "Email Tracker",
     image: Email_Track,
     description:
@@ -90,6 +81,15 @@ export const PROJECTS = [
     technologies: ["React.js", "Gemini API", "Vercel"],
     github: "https://github.com/Manoj-Katta/chef_gemini",
     website: "https://chef-gemini-ten.vercel.app/",
+  },
+  {
+    title: "Food-Restaurant-Frontend",
+    image: food_restaurant,
+    description:
+      "Developed a visually stunning and fully responsive food ordering website frontend using React.js, ensuring a seamless user experience across all devices.",
+    technologies: ["React"],
+    github: "https://github.com/Manoj-Katta/restaurant",
+    website: "https://food-restaurant-frontend.netlify.app/",
   },
 ];
 
