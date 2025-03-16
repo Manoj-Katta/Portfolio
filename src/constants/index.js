@@ -1,8 +1,9 @@
 import project1 from "../assets/projects/Ascend.png";
 import project2 from "../assets/projects/chatTime.png";
-import C2PA_Tool from "../assets/projects/C2PA_Tool.png"
-import food_restaurant from '../assets/projects/Food-Restaurant.png'
-import Email_Track from '../assets/projects/Email_Track.png'
+import C2PA_Tool from "../assets/projects/C2PA_Tool.png";
+import food_restaurant from "../assets/projects/Food-Restaurant.png";
+import Email_Track from "../assets/projects/Email_Track.png";
+import Chef_Gemini from "../assets/projects/chef_gemini.png";
 
 export const HERO_CONTENT = `A passionate Computer Science student at IIT Jammu with a strong foundation in full stack development and a keen interest in artificial intelligence and machine learning. With hands-on experience in developing and managing web applications, I strive to leverage my skills to solve real-world problems and create impactful solutions.`;
 
@@ -45,7 +46,7 @@ export const PROJECTS = [
       "Express.Js",
       "Tensor Flow",
     ],
-    github: "https://github.com/Manoj-Katta/Ascend"
+    github: "https://github.com/Manoj-Katta/Ascend",
   },
   {
     title: "Chat Time",
@@ -53,40 +54,43 @@ export const PROJECTS = [
     description:
       "Developed a Chat Application using the MERN stack. Implemented one-on-one and group chat functionalities using WebSockets and incorporated an AI-assisted chatbot to enhance user experience.",
     technologies: ["React", "Node.js", "MongoDB", "Express.js", "Socket.io"],
-    github:"https://github.com/Manoj-Katta/Chat_time"
+    github: "https://github.com/Manoj-Katta/Chat_time",
   },
   {
     title: "My_C2PA_TOOL",
     image: C2PA_Tool,
     description:
       "Created an innovative tool using the C2PA Node.js SDK and React JS to add and verify provenance manifests, strengthening digital content security. Implemented a solution to ensure the authenticity and integrity of images, effectively countering deepfake threats. Demonstrated advanced skills in Node.js and React JS by developing a custom content provenance tool aligned with the C2PA standard. Utilized a framework supported by Adobe, Microsoft, Intel, ARM, BBC, and Truepic, showcasing a commitment to combating misinformation and enhancing digital authenticity.",
-    technologies: ["React", "Node.js", "Express.js", "C2PA" ],
-    github: "https://github.com/Manoj-Katta/My_C2PA_Tool"
+    technologies: ["React", "Node.js", "Express.js", "C2PA"],
+    github: "https://github.com/Manoj-Katta/My_C2PA_Tool",
   },
-    {
-      title: "Food-Restaurant-Frontend",
-      image:food_restaurant,
-      description: "Developed a visually stunning and fully responsive food ordering website frontend using React.js, ensuring a seamless user experience across all devices.",
-      technologies: ["React"],
-      github:"https://github.com/Manoj-Katta/restaurant",
-      website:"https://food-restaurant-frontend.netlify.app/"
-    },
-    {
-      title: "Email Tracker",
-      image: Email_Track, 
-      description:
-        "Built an email tracking system to monitor email opens and interactions. Implemented a tracking pixel to capture email open events and stored metadata in MongoDB. Developed a dashboard to visualize email interactions, enhancing user insights. Resolved Gmail blacklisting issues by switching to Thunderbird for manual email sending.",
-      technologies: [
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "HTML",
-        "Vercel"
-      ],
-      github: "https://github.com/Manoj-Katta/email-tracker",
-      website: "https://email-tracker-frontend.vercel.app/"
-  }
-  
+  {
+    title: "Food-Restaurant-Frontend",
+    image: food_restaurant,
+    description:
+      "Developed a visually stunning and fully responsive food ordering website frontend using React.js, ensuring a seamless user experience across all devices.",
+    technologies: ["React"],
+    github: "https://github.com/Manoj-Katta/restaurant",
+    website: "https://food-restaurant-frontend.netlify.app/",
+  },
+  {
+    title: "Email Tracker",
+    image: Email_Track,
+    description:
+      "Built an email tracking system to monitor email opens and interactions. Implemented a tracking pixel to capture email open events and stored metadata in MongoDB. Developed a dashboard to visualize email interactions, enhancing user insights. Resolved Gmail blacklisting issues by switching to Thunderbird for manual email sending.",
+    technologies: ["Node.js", "Express.js", "MongoDB", "HTML", "Vercel"],
+    github: "https://github.com/Manoj-Katta/email-tracker",
+    website: "https://email-tracker-frontend.vercel.app/",
+  },
+  {
+    title: "Chef Gemini",
+    image: Chef_Gemini,
+    description:
+      "Developed a recipe generation tool using the Gemini API. Users can input a list of ingredients, and the app generates creative recipe suggestions. Optimized the UI for a seamless and engaging experience.",
+    technologies: ["React.js", "Gemini API", "Vercel"],
+    github: "https://github.com/Manoj-Katta/chef_gemini",
+    website: "https://chef-gemini-ten.vercel.app/",
+  },
 ];
 
 export const SKILLS = {
