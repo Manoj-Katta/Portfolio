@@ -59,7 +59,7 @@ const Projects = () => {
                       className="p-1"
                       onClick={() => handleRedirect(project.github)}
                     >
-                      <FaGithub />
+                      <FaGithub cursor={pointer}/>
                     </div>
                   </h6>
                 )}
@@ -70,7 +70,7 @@ const Projects = () => {
                       className="p-1"
                       onClick={() => handleRedirect(project.website)}
                     >
-                      <FaGlobe />
+                      <FaGlobe cursor={pointer} />
                     </div>
                   </h6>
                 )}
