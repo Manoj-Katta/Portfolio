@@ -51,7 +51,7 @@ const Projects = () => {
                   {tech}
                 </span>
               ))}
-              <div className="text-purple-600 m-2 flex-col">
+              <div className="text-purple-600 m-2 flex-col cursor-pointer">
                 {project.github && (
                   <h6 className="flex">
                     Github Repo:
@@ -59,7 +59,7 @@ const Projects = () => {
                       className="p-1"
                       onClick={() => handleRedirect(project.github)}
                     >
-                      <FaGithub cursor={pointer}/>
+                      <FaGithub />
                     </div>
                   </h6>
                 )}
@@ -70,7 +70,7 @@ const Projects = () => {
                       className="p-1"
                       onClick={() => handleRedirect(project.website)}
                     >
-                      <FaGlobe cursor={pointer} />
+                      <FaGlobe />
                     </div>
                   </h6>
                 )}
