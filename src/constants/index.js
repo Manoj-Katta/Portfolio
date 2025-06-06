@@ -4,10 +4,11 @@ import C2PA_Tool from "../assets/projects/C2PA_Tool.png";
 import food_restaurant from "../assets/projects/Food-Restaurant.png";
 import Email_Track from "../assets/projects/Email_Track.png";
 import Chef_Gemini from "../assets/projects/chef_gemini.png";
+import ticketBooking from "../assets/projects/Ticket-Booking.png"
 
 export const HERO_CONTENT = `A passionate Computer Science student at IIT Jammu with a strong foundation in full stack development and a keen interest in artificial intelligence and machine learning. With hands-on experience in developing and managing web applications, I strive to leverage my skills to solve real-world problems and create impactful solutions.`;
 
-export const ABOUT_TEXT = `A dedicated and versatile full stack developer currently pursuing a B.Tech in Computer Science at IIT Jammu. With a CGPA of 8.29 and a strong academic background, I have honed my skills in various technologies including HTML, CSS, JavaScript, React, Node.js, Express.js and MongoDB. My curiosity for technology drives me to continuously learn and adapt, tackling new challenges with enthusiasm. Outside of academics, I enjoy staying active with sports like volleyball and badminton, and I am actively involved in various extracurricular activities and competitions.`;
+export const ABOUT_TEXT = `A dedicated and versatile full stack developer currently pursuing a B.Tech in Computer Science at IIT Jammu. With a CGPA of 8.27 and a strong academic background, I have honed my skills in various technologies including HTML, CSS, JavaScript, React, Node.js, Express.js and MongoDB. My curiosity for technology drives me to continuously learn and adapt, tackling new challenges with enthusiasm. Outside of academics, I enjoy staying active with sports like volleyball and badminton, and I am actively involved in various extracurricular activities and competitions.`;
 
 export const EXPERIENCES = [
   {
@@ -91,6 +92,16 @@ export const PROJECTS = [
     github: "https://github.com/Manoj-Katta/restaurant",
     website: "https://food-restaurant-frontend.netlify.app/",
   },
+  {
+  title: "Train-Booking-System",
+  image: ticketBooking,
+  description:
+    "Built a modular CLI-based train ticket booking system using Java and Gradle with features like seat allocation, dynamic waitlisting, and passenger management. Designed with Java Collections and OOP principles to support future upgrades. Currently upgrading to a Spring Boot REST API with Docker-based deployment and atomic operation support.",
+  technologies: ["Java", "Gradle", "Java Collections"],
+  github: "https://github.com/Manoj-Katta/Train-Booking-System-backend-cli", 
+  website: "", 
+}
+
 ];
 
 export const SKILLS = {
