@@ -1,7 +1,7 @@
 import { DiRedis } from "react-icons/di";
-import { FaJava, FaNode } from "react-icons/fa";
+import { FaJava, FaNode, FaPython } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";
-import { SiExpress, SiGradle, SiMongodb, SiRedux } from "react-icons/si";
+import { SiExpress, SiGradle, SiMongodb, SiRedux, SiCplusplus, SiHtml5, SiCss3, SiJavascript, SiMysql, SiApachekafka, SiJenkins, SiBitbucket, SiGrafana, SiPostman, SiSpringboot, SiBootstrap,} from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { motion } from "framer-motion";
 
@@ -37,114 +37,76 @@ const Technologies = () => {
         className="flex flex-wrap items-center justify-center gap-6"
       >
 
-        {/* React */}
-        <motion.div
-          variants={iconVariants(2.5)}
-          initial="initial"
-          animate="animate"
-          className="flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4"
-          title="React"
-        >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
-          <span className="mt-2 text-sm">React</span>
+        {/* Programming Languages */}
+        <motion.div variants={iconVariants(2)} initial="initial" animate="animate" className="tech-card" title="C++">
+          <SiCplusplus className="text-7xl text-blue-600" />
+          <span className="mt-2 text-sm">C++</span>
         </motion.div>
 
-        {/* Next.js */}
-        <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4"
-          title="Next.js"
-        >
-          <TbBrandNextjs className="text-7xl" />
-          <span className="mt-2 text-sm">Next.js</span>
+        <motion.div variants={iconVariants(3)} initial="initial" animate="animate" className="tech-card" title="Python">
+          <FaPython className="text-7xl text-yellow-400" />
+          <span className="mt-2 text-sm">Python</span>
         </motion.div>
 
-        {/* Node.js */}
-        <motion.div
-          variants={iconVariants(5)}
-          initial="initial"
-          animate="animate"
-          className="flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4"
-          title="Node.js"
-        >
-          <FaNode className="text-7xl text-green-500" />
-          <span className="mt-2 text-sm">Node.js</span>
+        <motion.div variants={iconVariants(5)} initial="initial" animate="animate" className="tech-card" title="JavaScript">
+          <SiJavascript className="text-7xl text-yellow-500" />
+          <span className="mt-2 text-sm">JavaScript</span>
         </motion.div>
 
-        {/* Express */}
-        <motion.div
-          variants={iconVariants(6)}
-          initial="initial"
-          animate="animate"
-          className="flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4"
-          title="Express"
-        >
-          <SiExpress className="text-7xl" />
-          <span className="mt-2 text-sm">Express</span>
+        {/* Web Development */}
+        <motion.div variants={iconVariants(3)} initial="initial" animate="animate" className="tech-card" title="HTML5">
+          <SiHtml5 className="text-7xl text-orange-600" />
+          <span className="mt-2 text-sm">HTML</span>
         </motion.div>
 
-        {/* MongoDB */}
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4"
-          title="MongoDB"
-        >
-          <SiMongodb className="text-7xl text-green-500" />
-          <span className="mt-2 text-sm">MongoDB</span>
+        <motion.div variants={iconVariants(4)} initial="initial" animate="animate" className="tech-card" title="CSS3">
+          <SiCss3 className="text-7xl text-blue-500" />
+          <span className="mt-2 text-sm">CSS</span>
         </motion.div>
 
-        {/* Redux */}
-        <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4"
-          title="Redux"
-        >
-          <SiRedux className="text-7xl text-violet-500" />
-          <span className="mt-2 text-sm">Redux</span>
+        <motion.div variants={iconVariants(4)} initial="initial" animate="animate" className="tech-card" title="Bootstrap">
+          <SiBootstrap className="text-7xl text-purple-600" />
+          <span className="mt-2 text-sm">Bootstrap</span>
         </motion.div>
 
-        {/* Java */}
-        <motion.div
-          variants={iconVariants(5)}
-          initial="initial"
-          animate="animate"
-          className="flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4"
-          title="Java"
-        >
-          <FaJava className="text-7xl text-[#007396]" />
-          <span className="mt-2 text-sm">Java</span>
+        <motion.div variants={iconVariants(4)} initial="initial" animate="animate" className="tech-card" title="Spring Boot">
+          <SiSpringboot className="text-7xl text-green-600" />
+          <span className="mt-2 text-sm">Spring Boot</span>
         </motion.div>
 
-        {/* Gradle */}
-        <motion.div
-          variants={iconVariants(5)}
-          initial="initial"
-          animate="animate"
-          className="flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4"
-          title="Gradle"
-        >
-          <SiGradle className="text-7xl text-green-600" />
-          <span className="mt-2 text-sm">Gradle</span>
+        {/* Databases */}
+        <motion.div variants={iconVariants(3)} initial="initial" animate="animate" className="tech-card" title="MySQL">
+          <SiMysql className="text-7xl text-blue-600" />
+          <span className="mt-2 text-sm">MySQL</span>
         </motion.div>
 
-        {/* Redis */}
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4"
-          title="Redis"
-        >
-          <DiRedis className="text-7xl text-red-600" />
-          <span className="mt-2 text-sm">Redis</span>
+        {/* Messaging & Queues */}
+        <motion.div variants={iconVariants(3)} initial="initial" animate="animate" className="tech-card" title="Kafka">
+          <SiApachekafka className="text-7xl text-black" />
+          <span className="mt-2 text-sm">Kafka</span>
         </motion.div>
 
+        {/* DevOps & Monitoring */}
+        <motion.div variants={iconVariants(4)} initial="initial" animate="animate" className="tech-card" title="Jenkins">
+          <SiJenkins className="text-7xl text-red-600" />
+          <span className="mt-2 text-sm">Jenkins</span>
+        </motion.div>
+
+        <motion.div variants={iconVariants(4)} initial="initial" animate="animate" className="tech-card" title="Bitbucket">
+          <SiBitbucket className="text-7xl text-blue-500" />
+          <span className="mt-2 text-sm">Bitbucket</span>
+        </motion.div>
+
+        <motion.div variants={iconVariants(4)} initial="initial" animate="animate" className="tech-card" title="Grafana">
+          <SiGrafana className="text-7xl text-orange-500" />
+          <span className="mt-2 text-sm">Grafana</span>
+        </motion.div>
+
+        {/* Tools & Platforms */}
+        <motion.div variants={iconVariants(4)} initial="initial" animate="animate" className="tech-card" title="Postman">
+          <SiPostman className="text-7xl text-orange-400" />
+          <span className="mt-2 text-sm">Postman</span>
+        </motion.div>
       </motion.div>
     </div>
   );

@@ -12,6 +12,28 @@ export const ABOUT_TEXT = `A dedicated and versatile full stack developer curren
 
 export const EXPERIENCES = [
   {
+    year: "Jun 2025 - Present",
+    role: "Software Engineer Intern",
+    company: "Paytm",
+    description: `Enhanced backend systems handling ₹130+ crore in daily merchant payouts, ensuring high reliability and accurate commission workflows.
+Improved revenue reconciliation by upgrading reporting modules and strengthening error-handling in transaction flows.
+Set up a RabbitMQ staging cluster to automate report generation, eliminating manual steps and improving efficiency.
+Implemented payout-side enhancements for the new Gold Coin feature in Paytm’s Gold Team, ensuring seamless integration and smooth rollout.
+Resolved critical Elasticsearch fetch error that was blocking report generation, restoring reporting functionality.`,
+    technologies: [
+      "Apache Kafka",
+      "RabbitMQ",
+      "Java",
+      "JIRA",
+      "Distributed Systems",
+      "MySQL",
+      "Node js",
+      "Jenkins",
+      "Bit bucket"
+    ],
+  },
+
+  {
     year: "May 2024 - Aug 2024",
     role: "Research Intern",
     company: "City, University of London",
@@ -93,14 +115,14 @@ export const PROJECTS = [
     website: "https://food-restaurant-frontend.netlify.app/",
   },
   {
-  title: "Train-Booking-System",
-  image: ticketBooking,
-  description:
-    "Built a modular CLI-based train ticket booking system using Java and Gradle with features like seat allocation, dynamic waitlisting, and passenger management. Designed with Java Collections and OOP principles to support future upgrades. Currently upgrading to a Spring Boot REST API with Docker-based deployment and atomic operation support.",
-  technologies: ["Java", "Gradle", "Java Collections"],
-  github: "https://github.com/Manoj-Katta/Train-Booking-System-backend-cli", 
-  website: "", 
-}
+    title: "Train-Booking-System",
+    image: ticketBooking,
+    description:
+      "Built a modular CLI-based train ticket booking system using Java and Gradle with features like seat allocation, dynamic waitlisting, and passenger management. Designed with Java Collections and OOP principles to support future upgrades. Currently upgrading to a Spring Boot REST API with Docker-based deployment and atomic operation support.",
+    technologies: ["Java", "Gradle", "Java Collections"],
+    github: "https://github.com/Manoj-Katta/Train-Booking-System-backend-cli",
+    website: "",
+  }
 
 ];
 
