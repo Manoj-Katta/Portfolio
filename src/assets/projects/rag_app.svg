@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="932" height="400" viewBox="0 0 932 400" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="932" height="400" rx="16" fill="#0f172a"/>
+  <text x="48" y="70" fill="#e2e8f0" font-size="30" font-weight="700">rag_application</text>
+  <text x="48" y="104" fill="#94a3b8" font-size="18">Hybrid-retrieval RAG over Markdown, text and PDF documents</text>
+  <g font-size="17" font-weight="600" text-anchor="middle">
+    <rect x="48" y="160" width="150" height="56" rx="10" fill="#1e293b" stroke="#334155"/>
+    <text x="123" y="194" fill="#e2e8f0">Question</text>
+    <rect x="258" y="130" width="170" height="52" rx="10" fill="#1e3a8a"/>
+    <text x="343" y="162" fill="#dbeafe">BM25</text>
+    <rect x="258" y="196" width="170" height="52" rx="10" fill="#4c1d95"/>
+    <text x="343" y="228" fill="#ede9fe">Vector (bge)</text>
+    <rect x="488" y="160" width="170" height="56" rx="10" fill="#065f46"/>
+    <text x="573" y="194" fill="#d1fae5">RRF fusion</text>
+    <rect x="718" y="160" width="166" height="56" rx="10" fill="#1e293b" stroke="#334155"/>
+    <text x="801" y="194" fill="#e2e8f0">Cited answer</text>
+  </g>
+  <g stroke="#64748b" stroke-width="2" fill="none">
+    <path d="M198 180 L258 156"/><path d="M198 196 L258 222"/>
+    <path d="M428 156 L488 180"/><path d="M428 222 L488 196"/>
+    <path d="M658 188 L718 188"/>
+  </g>
+  <g font-size="16">
+    <text x="48" y="310" fill="#94a3b8">Kubernetes docs eval (36 questions)</text>
+    <text x="48" y="346" fill="#e2e8f0" font-size="22" font-weight="700">86.1% hit@5 hybrid</text>
+    <text x="330" y="346" fill="#94a3b8">vs 80.6% BM25 · 69.4% vector</text>
+  </g>
+</svg>
