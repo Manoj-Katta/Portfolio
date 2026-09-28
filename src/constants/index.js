@@ -1,18 +1,40 @@
 import project1 from "../assets/projects/Ascend.png";
 import project2 from "../assets/projects/chatTime.png";
 import C2PA_Tool from "../assets/projects/C2PA_Tool.png";
-import food_restaurant from "../assets/projects/Food-Restaurant.png";
 import Email_Track from "../assets/projects/Email_Track.png";
 import Chef_Gemini from "../assets/projects/chef_gemini.png";
-import ticketBooking from "../assets/projects/Ticket-Booking.png"
+import ticketBooking from "../assets/projects/Ticket-Booking.png";
+import ragApp from "../assets/projects/rag_app.svg";
 
-export const HERO_CONTENT = `A passionate Computer Science student at IIT Jammu with a strong foundation in full stack development and a keen interest in artificial intelligence and machine learning. With hands-on experience in developing and managing web applications, I strive to leverage my skills to solve real-world problems and create impactful solutions.`;
+export const HERO_CONTENT = `Software Engineer at BrowserStack on Percy, its visual testing product. I build backend features across the Rails API and the Node.js CLI and SDKs, and work on the platform underneath them: storage and data lifecycle on GCS, the Sidekiq/Redis job pipeline, and browser rendering infrastructure. Computer Science graduate from IIT Jammu.`;
 
-export const ABOUT_TEXT = `A dedicated and versatile full stack developer currently pursuing a B.Tech in Computer Science at IIT Jammu. With a CGPA of 8.27 and a strong academic background, I have honed my skills in various technologies including HTML, CSS, JavaScript, React, Node.js, Express.js and MongoDB. My curiosity for technology drives me to continuously learn and adapt, tackling new challenges with enthusiasm. Outside of academics, I enjoy staying active with sports like volleyball and badminton, and I am actively involved in various extracurricular activities and competitions.`;
+export const ABOUT_TEXT = `I'm a software engineer who likes the backend and platform side of products: data pipelines, job queues, storage and the infrastructure that keeps them reliable. At BrowserStack I work on Percy, shipping customer-facing features such as popover and dialog capture in the Percy CLI, and platform work such as a resource-retention deletion pipeline, browser upgrades across the rendering stack, and canary deploys for the job dispatcher. Before that I interned at Paytm on the payouts backend, and did research on C2PA content provenance at City, University of London. I studied Computer Science at IIT Jammu. Outside work I play volleyball and badminton.`;
 
 export const EXPERIENCES = [
   {
-    year: "Jun 2025 - Present",
+    year: "Sep 2025 - Present",
+    role: "Software Engineer",
+    company: "BrowserStack",
+    description: `Built popover and dialog capture in @percy/cli (500K+ weekly downloads) and added SDK-wide global config, unblocking an enterprise deal.
+Designed and built a resource-retention deletion pipeline that removes page assets 3 months after last use, plus a backlog sweep across ~1B+ eligible resources on a shared worker fleet, with a guard that never deletes assets a live build still uses. Targets ~$25-34K/yr in GCS savings.
+Shipped Firefox 146, Edge 142/143 and Chrome 143 end to end across base image, renderer, API, cache worker and CLI, using production build replays for the go/no-go. Traced an Edge render-latency regression to its bundled AI features and disabled them in Edge 142 and 143, cutting the added per-snapshot latency from ~2s to under 500ms, and shipped Edge 142.
+Built a superuser admin API for browser force-upgrades, with dry-run preview, async runs, rate limiting and single-flight locking, replacing a production-console procedure.
+Added canary deploys to the job dispatcher: a canary flag threaded from the API through Redis Lua into a pool-aware scheduler, with an isolated worker pool and a global kill switch.
+Reworked the on-call alerts for Sidekiq, compare jobs and the rendering proxy, cutting about 95% of page noise on the proxy alert and reducing triage from about 15 minutes to seconds.`,
+    technologies: [
+      "Ruby on Rails",
+      "Sidekiq",
+      "Redis",
+      "Node.js",
+      "MySQL",
+      "GCP",
+      "Kubernetes",
+      "BigQuery",
+      "Honeycomb",
+    ],
+  },
+  {
+    year: "Jun 2025 - Sep 2025",
     role: "Software Engineer Intern",
     company: "Paytm",
     description: `Enhanced backend systems handling ₹130+ crore in daily merchant payouts, ensuring high reliability and accurate commission workflows.
@@ -56,6 +78,14 @@ Developed my own C2PA implementation using ReactJS and NodeJS SDK of Content Aut
 ];
 
 export const PROJECTS = [
+  {
+    title: "rag_application",
+    image: ragApp,
+    description:
+      "Config-driven retrieval-augmented generation over Markdown, text and PDF documents. Fuses BM25 and local vector search with reciprocal rank fusion and returns answers with citations to the exact section or page. Includes a retrieval eval harness: on a 36-question Kubernetes docs set, hybrid search reaches 86.1% hit@5 against 80.6% for BM25 and 69.4% for vectors alone. Usable as a Node library, a CLI or an HTTP API.",
+    technologies: ["Node.js", "Express", "Transformers.js", "BM25", "Gemini API"],
+    github: "https://github.com/Manoj-Katta/rag_application",
+  },
   {
     title: "Ascend",
     image: project1,
@@ -102,17 +132,7 @@ export const PROJECTS = [
     description:
       "Developed a recipe generation tool using the Gemini API. Users can input a list of ingredients, and the app generates creative recipe suggestions. Optimized the UI for a seamless and engaging experience.",
     technologies: ["React.js", "Gemini API", "Vercel"],
-    github: "https://github.com/Manoj-Katta/chef_gemini",
     website: "https://chef-gemini-ten.vercel.app/",
-  },
-  {
-    title: "Food-Restaurant-Frontend",
-    image: food_restaurant,
-    description:
-      "Developed a visually stunning and fully responsive food ordering website frontend using React.js, ensuring a seamless user experience across all devices.",
-    technologies: ["React"],
-    github: "https://github.com/Manoj-Katta/restaurant",
-    website: "https://food-restaurant-frontend.netlify.app/",
   },
   {
     title: "Train-Booking-System",
@@ -126,56 +146,8 @@ export const PROJECTS = [
 
 ];
 
-export const SKILLS = {
-  programmingLanguages: ["C++", "Python"],
-  webDevelopment: [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "Bootstrap",
-    "React JS",
-    "Node JS",
-    "MongoDB",
-    "Express JS",
-  ],
-  softwares: ["Git", "Onshape", "MySQL", "PowerPoint"],
-  relevantCoursework: [
-    "Data Structures & Algorithms",
-    "Database Management Systems",
-    "Computer Networks",
-    "Machine Learning",
-    "Computer Architecture",
-    "High Performance Computer Systems",
-  ],
-};
-
-export const CERTIFICATIONS = [
-  {
-    title: "The Complete 2023 Web Development Bootcamp",
-    provider: "Udemy",
-  },
-];
-
-export const ADDITIONAL_DETAILS = {
-  achievements: ["Solved over 400+ problems on Leetcode and GFG combined."],
-  positionsOfResponsibility: [
-    "Representative of Career and Development Services, IIT Jammu",
-    "Head of Content and Design Team in Career and Development Services, IIT Jammu",
-  ],
-  extracurricularActivities: [
-    "Participated in the 55th Inter IIT Sports Meet and qualified for pre-quarter finals.",
-    "Participated in Inter IIT Tech Meet 12.0",
-    "Participated in various case study competitions like RED BRICK by IIM Ahmedabad, Be the CXO.",
-    "Hosted Case Study Competition StrategiQ and Pan India stock market trading competition StockGro.",
-    "Volunteered in Technunctus-22, 23 and Renao-23.",
-  ],
-  hobbies: ["Volleyball", "Badminton", "Gym"],
-  languages: ["English", "Hindi", "Telugu"],
-};
-
 export const CONTACT = {
   address: "Andhra Pradesh, India",
-  phoneNo: "+91 8309507120",
   email: "manojkatta1173@gmail.com",
 };
 
