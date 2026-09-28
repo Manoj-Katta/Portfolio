@@ -17,7 +17,7 @@ export const EXPERIENCES = [
     company: "BrowserStack",
     description: `Built popover and dialog capture in @percy/cli (500K+ weekly downloads) and added SDK-wide global config, unblocking an enterprise deal.
 Designed and built a resource-retention deletion pipeline that removes page assets 3 months after last use, plus a backlog sweep across ~1B+ eligible resources on a shared worker fleet, with a guard that never deletes assets a live build still uses. Targets ~$25-34K/yr in GCS savings.
-Shipped Firefox 146, Edge 142/143 and Chrome 143 end to end across base image, renderer, API, cache worker and CLI, using production build replays for the go/no-go, and isolated an Edge 143 render-latency regression to specific bundled browser features.
+Shipped Firefox 146, Edge 142/143 and Chrome 143 end to end across base image, renderer, API, cache worker and CLI, using production build replays for the go/no-go. Traced an Edge render-latency regression to its bundled AI features and disabled them in Edge 142 and 143, cutting the added per-snapshot latency from ~2s to under 500ms, then shipped Edge 142 as the faster build.
 Built a superuser admin API for browser force-upgrades, with dry-run preview, async runs, rate limiting and single-flight locking, replacing a production-console procedure.
 Added canary deploys to the job dispatcher: a canary flag threaded from the API through Redis Lua into a pool-aware scheduler, with an isolated worker pool and a global kill switch.
 Reworked the on-call alerts for Sidekiq, compare jobs and the rendering proxy, cutting about 95% of page noise on the proxy alert and reducing triage from about 15 minutes to seconds.`,
