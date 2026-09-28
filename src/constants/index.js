@@ -15,11 +15,12 @@ export const EXPERIENCES = [
     year: "Sep 2025 - Present",
     role: "Software Engineer",
     company: "BrowserStack",
-    description: `Work on Percy, BrowserStack's visual testing product, across backend features and platform infrastructure.
-Built popover and dialog capture in @percy/cli (500K+ weekly downloads), unblocking an enterprise deal.
-Designed and built a resource-retention deletion pipeline that deletes page assets 3 months after last use, plus a backlog sweep across ~1B+ eligible resources, targeting ~$25-34K/yr in GCS savings.
-Shipped Firefox 146, Edge 142/143 and Chrome 143 across the rendering stack, and a superuser admin API for safe browser force-upgrades.
-Built canary deploys for the job dispatcher: a canary flag threaded through Redis Lua into a pool-aware scheduler, with an isolated worker pool and a kill switch.`,
+    description: `Built popover and dialog capture in @percy/cli (500K+ weekly downloads) and added SDK-wide global config, unblocking an enterprise deal.
+Designed and built a resource-retention deletion pipeline that removes page assets 3 months after last use, plus a backlog sweep across ~1B+ eligible resources on a shared worker fleet, with a guard that never deletes assets a live build still uses. Targets ~$25-34K/yr in GCS savings.
+Shipped Firefox 146, Edge 142/143 and Chrome 143 end to end across base image, renderer, API, cache worker and CLI, using production build replays for the go/no-go, and isolated an Edge 143 render-latency regression to specific bundled browser features.
+Built a superuser admin API for browser force-upgrades, with dry-run preview, async runs, rate limiting and single-flight locking, replacing a production-console procedure.
+Added canary deploys to the job dispatcher: a canary flag threaded from the API through Redis Lua into a pool-aware scheduler, with an isolated worker pool and a global kill switch.
+Reworked the on-call alerts for Sidekiq, compare jobs and the rendering proxy, cutting about 95% of page noise on the proxy alert and reducing triage from about 15 minutes to seconds.`,
     technologies: [
       "Ruby on Rails",
       "Sidekiq",
@@ -131,7 +132,6 @@ export const PROJECTS = [
     description:
       "Developed a recipe generation tool using the Gemini API. Users can input a list of ingredients, and the app generates creative recipe suggestions. Optimized the UI for a seamless and engaging experience.",
     technologies: ["React.js", "Gemini API", "Vercel"],
-    github: "https://github.com/Manoj-Katta/chef_gemini",
     website: "https://chef-gemini-ten.vercel.app/",
   },
   {
