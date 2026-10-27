@@ -15,12 +15,11 @@ export const EXPERIENCES = [
     year: "Sep 2025 - Present",
     role: "Software Engineer",
     company: "BrowserStack",
-    description: `Built popover and dialog capture in @percy/cli (500K+ weekly downloads) and added SDK-wide global config, unblocking an enterprise deal.
-Designed and built a resource-retention deletion pipeline that removes page assets 3 months after last use, plus a backlog sweep across ~1B+ eligible resources on a shared worker fleet, with a guard that never deletes assets a live build still uses. Targets ~$25-34K/yr in GCS savings.
-Shipped Firefox 146, Edge 142/143 and Chrome 143 end to end across base image, renderer, API, cache worker and CLI, using production build replays for the go/no-go. Traced an Edge render-latency regression to its bundled AI features and disabled them in Edge 142 and 143, cutting the added per-snapshot latency from ~2s to under 500ms, and shipped Edge 142.
-Built a superuser admin API for browser force-upgrades, with dry-run preview, async runs, rate limiting and single-flight locking, replacing a production-console procedure.
+    description: `Built popover capture across @percy/cli (500K+ weekly downloads, released in v1.31.11), the render cache worker and the Ember SDK (v5.0.1), unblocking an enterprise deal.
+Designed a resource-retention deletion pipeline over ~1B+ eligible page assets, on its own worker pods and queues, with a guard that never deletes assets a live build still uses. It has removed ~45 TB from the resources bucket so far, cutting ~$14K a year in ongoing storage cost, and keeps deleting as assets age out.
+Own Percy's desktop browser upgrades end to end across base image, renderer, API, cache worker and CLI. Traced an Edge render-latency regression to bundled AI features and cut the added per-snapshot latency from ~2s to under 500ms; built an admin API with dry-run preview that replaced a production-console upgrade procedure.
 Added canary deploys to the job dispatcher: a canary flag threaded from the API through Redis Lua into a pool-aware scheduler, with an isolated worker pool and a global kill switch.
-Reworked the on-call alerts for Sidekiq, compare jobs and the rendering proxy, cutting about 95% of page noise on the proxy alert and reducing triage from about 15 minutes to seconds.`,
+Cut on-call noise: reworked the Sidekiq, compare-job and rendering-proxy alerts (about 95% less page noise on the proxy alert), and replaced ~6.2M per-terminal health-check pager events a week with one summary per pool.`,
     technologies: [
       "Ruby on Rails",
       "Sidekiq",
